@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Ashutosh Kumar - Computer Science Undergraduate, Java Developer, and DSA Enthusiast. Showcasing projects, skills, education, and internship experience.">
+  <meta name="author" content="Ashutosh Kumar">
+  <meta name="keywords" content="Ashutosh Kumar, Portfolio, Software Engineer, Java Developer, DSA, Devbhoomi Uttarakhand University, Pinnacle Lab, Web Developer">
+  <title>Ashutosh Kumar | Aspiring Software Engineer Portfolio</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- FontAwesome Icons for developer brand items (e.g. Java, Python, LeetCode, GitHub) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Loading Animation Screen -->
+  <div class="loader-overlay" id="loader">
+    <div class="loader-spinner" aria-label="Loading portfolio page"></div>
+  </div>
+
+  <!-- Header / Navigation Bar -->
+  <header id="header">
+    <nav class="navbar" aria-label="Main Navigation">
+      <div class="logo">
+        <a href="#hero">Ashutosh<span>Kumar</span></a>
+      </div>
+      
+      <!-- Hamburger Menu for Mobile -->
+      <button class="menu-toggle" id="mobile-menu" aria-label="Toggle Menu" aria-expanded="false" aria-controls="nav-links-list">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links" id="nav-links-list">
+        <li class="nav-item"><a href="#hero">Home</a></li>
+        <li class="nav-item"><a href="#about">About</a></li>
+        <li class="nav-item"><a href="#education">Education</a></li>
+        <li class="nav-item"><a href="#experience">Experience</a></li>
+        <li class="nav-item"><a href="#skills">Skills</a></li>
+        <li class="nav-item"><a href="#projects">Projects</a></li>
+        <li class="nav-item"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Interactive Grid Background Elements -->
+  <div class="bg-grid"></div>
+  <div class="bg-radial"></div>
+  <div class="floating-circle circle-1"></div>
+  <div class="floating-circle circle-2"></div>
+
+  <main>
+    
+    <!-- Hero / Home Section -->
+    <section id="hero" class="section">
+      <!-- Interactive canvas particle system background -->
+      <canvas id="hero-canvas"></canvas>
+      
+      <div class="container hero-grid">
+        <div class="hero-content reveal-left">
+          <span class="hero-tag">&lt;welcome_to_my_portfolio&gt;</span>
+          <h1 class="hero-title">Hi, I'm <span>Ashutosh Kumar</span></h1>
+          
+          <!-- Typing Animation Container -->
+          <div class="typing-container">
+            <span class="typing-text" id="typing-element"></span><span class="typing-cursor" aria-hidden="true"></span>
+          </div>
+          
+          <p class="hero-description">
+            I am a Second-year Computer Science and Engineering undergraduate at Devbhoomi Uttarakhand University, Dehradun, with a strong passion for problem-solving and exploring cutting-edge technologies in computer science. Currently, I am learning Data Structures and Algorithms in Java and working toward becoming a Software Engineer.
+          </p>
+          
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-code"></i> View Projects</a>
+            <a href="#contact" class="btn btn-secondary"><i class="fa-solid fa-envelope"></i> Contact Me</a>
+            <a href="#contact" class="btn btn-text" id="resume-download-btn"><i class="fa-solid fa-download"></i> Get Resume</a>
+          </div>
+        </div>
+        
+        <div class="hero-image-wrapper reveal-right">
+          <div class="profile-card">
+            <div class="profile-img-container">
+              <img src="assets/ashutosh_profile.jpg" alt="Ashutosh Kumar - Computer Science Undergraduate Portrait">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        
+        <div class="about-grid">
+          <!-- Stats Cards Grid -->
+          <div class="about-graphics reveal-left">
+            <div class="glass-panel stat-card">
+              <div class="stat-icon"><i class="fa-solid fa-user-graduate"></i></div>
+              <div class="stat-num">B.Tech CSE</div>
+              <div class="stat-label">Undergraduate</div>
+            </div>
+            
+            <div class="glass-panel stat-card">
+              <div class="stat-icon"><i class="fa-solid fa-calendar-days"></i></div>
+              <div class="stat-num">2024–2028</div>
+              <div class="stat-label">Academic Batch</div>
+            </div>
+            
+            <div class="glass-panel stat-card">
+              <div class="stat-icon"><i class="fa-solid fa-brain"></i></div>
+              <div class="stat-num">DSA Learner</div>
+              <div class="stat-label">Java Focus</div>
+            </div>
+            
+            <div class="glass-panel stat-card">
+              <div class="stat-icon"><i class="fa-solid fa-laptop-code"></i></div>
+              <div class="stat-num">Web Developer</div>
+              <div class="stat-label">Frontend & Modern Tech</div>
+            </div>
+          </div>
+          
+          <!-- Detailed Description -->
+          <div class="about-text reveal-right">
+            <h3>My Passion and Aspirations</h3>
+            <p>
+              My academic journey began in 2024, enrolling in the Bachelor of Technology in Computer Science and Engineering at Devbhoomi Uttarakhand University, Dehradun. From day one, I have been captivated by how software technologies can solve complex challenges and improve daily lives.
+            </p>
+            <p>
+              I dedicate a major part of my day to learning Data Structures and Algorithms in Java. Breaking down problems, choosing the right structures, and optimizing algorithms gives me an immense sense of accomplishment. My goal is to build a rock-solid foundation in software engineering principles.
+            </p>
+            <p>
+              In addition to DSA, I am actively exploring modern web development technologies. Building interactive, aesthetically pleasing interfaces like this portfolio is another creative outlet for me. I am highly motivated to keep learning, adapt to industry trends, and prepare myself for a successful career as a Software Engineer.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section timeline-section">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        
+        <div class="timeline">
+          <!-- B.Tech entry -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="glass-panel timeline-card">
+              <div class="timeline-header">
+                <div class="timeline-title">
+                  <h3>Bachelor of Technology (B.Tech)</h3>
+                  <div class="timeline-subtitle">Computer Science and Engineering</div>
+                </div>
+                <div class="timeline-date">2024 – 2028</div>
+              </div>
+              <div class="timeline-body">
+                <p><strong>Devbhoomi Uttarakhand University</strong>, Dehradun, Uttarakhand, India</p>
+                <p>Acquiring knowledge in core Computer Science topics including Programming Fundamentals, Algorithms, Web Technologies, Database Systems, and Software Engineering principles. Actively participating in technical groups and DSA problem-solving clusters.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Senior Secondary Education -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="glass-panel timeline-card">
+              <div class="timeline-header">
+                <div class="timeline-title">
+                  <h3>Senior Secondary Education</h3>
+                  <div class="timeline-subtitle">Science Stream</div>
+                </div>
+                <div class="timeline-date">73%</div>
+              </div>
+              <div class="timeline-body">
+                <p><strong>Jaganarayan Inter Astariya School</strong>, Bihar, India</p>
+                <p>Focused on Physics, Chemistry, and Mathematics (PCM), building a strong logical framework and analytical reasoning skills key to computer science.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Secondary Education -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="glass-panel timeline-card">
+              <div class="timeline-header">
+                <div class="timeline-title">
+                  <h3>Secondary Education</h3>
+                  <div class="timeline-subtitle">General Curriculum</div>
+                </div>
+                <div class="timeline-date">84.4%</div>
+              </div>
+              <div class="timeline-body">
+                <p><strong>Jagnarayan Inter Astariya School</strong>, Bihar, India</p>
+                <p>Demonstrated excellent academic foundation and problem-solving habits during secondary school education.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section timeline-section">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+        
+        <div class="timeline">
+          <!-- Web Dev Intern entry -->
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="glass-panel timeline-card">
+              <div class="timeline-header">
+                <div class="timeline-title">
+                  <h3>Web Development Intern</h3>
+                  <div class="timeline-subtitle">Pinnacle Lab</div>
+                </div>
+                <div class="timeline-date">Internship</div>
+              </div>
+              <div class="timeline-body">
+                <p>Contributed to real-world frontend web development projects and refined programming skills.</p>
+                <ul class="timeline-list">
+                  <li>Developed clean, modular interfaces using modern HTML5, CSS3, and JavaScript logic.</li>
+                  <li>Collaborated on real-world development tasks, ensuring compliance with UI mockups.</li>
+                  <li>Enhanced understanding of responsive layout grids, cross-device testing, and interactive behaviors.</li>
+                  <li>Gained exposure to version control tools and team-driven delivery workflows.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
+        
+        <div class="skills-grid">
+          
+          <!-- Category 1: Languages -->
+          <div class="glass-panel skills-category reveal-left">
+            <h3><i class="fa-solid fa-code"></i> Programming Languages</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Java (Core & Collections)</span>
+                  <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" data-width="90%"></div>
+                </div>
+              </div>
+              
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">JavaScript (ES6+)</span>
+                  <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" data-width="80%"></div>
+                </div>
+              </div>
+              
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Python</span>
+                  <span class="skill-percentage">75%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" data-width="75%"></div>
+                </div>
+              </div>
+              
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">C++</span>
+                  <span class="skill-percentage">70%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" data-width="70%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Category 2: Web Development -->
+          <div class="glass-panel skills-category reveal-right">
+            <h3><i class="fa-solid fa-laptop-code"></i> Web Development</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">HTML5 / Semantic Layouts</span>
+                  <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" data-width="90%"></div>
+                </div>
+              </div>
+              
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">CSS3 / Flexbox & Grid</span>
+                  <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" data-width="85%"></div>
+                </div>
+              </div>
+              
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">DOM Manipulation & Fetch API</span>
+                  <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" data-width="80%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Category 3: Tools & Platforms -->
+          <div class="glass-panel skills-category reveal-left">
+            <h3><i class="fa-solid fa-toolbox"></i> Tools & Platforms</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">VS Code</span>
+                  <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" data-width="90%"></div>
+                </div>
+              </div>
+              
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Git & GitHub</span>
+                  <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" data-width="85%"></div>
+                </div>
+              </div>
+              
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">LeetCode Platform</span>
+                  <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-bar-bg">
+                  <div class="skill-bar-fill" data-width="80%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Category 4: Core Competencies (Tags Style) -->
+          <div class="glass-panel skills-category reveal-right">
+            <h3><i class="fa-solid fa-gears"></i> Core Competencies</h3>
+            <div class="skill-tags">
+              <div class="glass-panel skill-tag-card">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>Data Structures & Algorithms</span>
+              </div>
+              <div class="glass-panel skill-tag-card">
+                <i class="fa-solid fa-puzzle-piece"></i>
+                <span>Problem Solving</span>
+              </div>
+              <div class="glass-panel skill-tag-card">
+                <i class="fa-solid fa-lightbulb"></i>
+                <span>Logical Thinking</span>
+              </div>
+              <div class="glass-panel skill-tag-card">
+                <i class="fa-solid fa-terminal"></i>
+                <span>Software Fundamentals</span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        
+        <div class="projects-showcase reveal">
+          <!-- Project 1: Weather Dashboard -->
+          <div class="glass-panel project-card">
+            
+            <!-- Screenshot Carousel -->
+            <div class="project-carousel-wrapper">
+              <div class="project-carousel" id="carousel">
+                <div class="carousel-slide">
+                  <img src="assets/weather_dashboard_mockup.png" alt="Weather Dashboard Main Interface Mockup showing forecast and temp details">
+                </div>
+                <div class="carousel-slide">
+                  <!-- Second slide representing detailed view / mobile view to fulfill carousel requirement -->
+                  <div style="background-color: var(--bg-secondary); width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 2rem; text-align: center;">
+                    <i class="fa-solid fa-cloud-sun-rain" style="font-size: 5rem; color: var(--accent-cyan); margin-bottom: 1.5rem;"></i>
+                    <h4 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--text-primary);">Interactive Chart Integration</h4>
+                    <p style="max-width: 320px; font-size: 0.9rem;">Visualizes temperature trends and forecast data dynamically using custom configurations of Chart.js library.</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Carousel Controls -->
+              <button class="carousel-nav-btn carousel-prev" id="prev-slide" aria-label="Previous Slide"><i class="fa-solid fa-chevron-left"></i></button>
+              <button class="carousel-nav-btn carousel-next" id="next-slide" aria-label="Next Slide"><i class="fa-solid fa-chevron-right"></i></button>
+              
+              <!-- Indicator Dots -->
+              <div class="carousel-dots" id="dots-container">
+                <span class="carousel-dot active" data-index="0"></span>
+                <span class="carousel-dot" data-index="1"></span>
+              </div>
+            </div>
+            
+            <!-- Details Area -->
+            <div class="project-details">
+              <span class="project-tag">Featured Project</span>
+              <h3>Weather Dashboard</h3>
+              <p class="project-desc">
+                Built a responsive weather application featuring real-time weather updates, 5-day weather forecasting, geolocation support, Air Quality Index monitoring, dark mode functionality, and interactive temperature visualization.
+              </p>
+              
+              <div class="tech-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">OpenWeatherMap API</span>
+                <span class="tech-tag">Chart.js</span>
+              </div>
+              
+              <div class="project-actions">
+                <a href="#" class="btn btn-primary" onclick="alert('Demo server integration simulated. Real dashboard demo utilizes OpenWeatherMap endpoint credentials.'); return false;"><i class="fa-solid fa-square-arrow-up-right"></i> Live Demo</a>
+                <a href="https://github.com/Ashutosh7643" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><i class="fa-brands fa-github"></i> Repository</a>
+              </div>
+            </div>
+            
+          </div>
+
+          <!-- Project 2: Amul Kool Animated Website -->
+          <div class="glass-panel project-card">
+            
+            <!-- Project Image Frame -->
+            <div class="project-carousel-wrapper">
+              <div class="carousel-slide" style="height: 100%;">
+                <img src="assets/amul_kool_mockup.png" alt="Amul Kool Animated Website Interface Mockup showing interactive bottle showcase and animated banners">
+              </div>
+            </div>
+            
+            <!-- Details Area -->
+            <div class="project-details">
+              <span class="project-tag">Featured Project</span>
+              <h3>Amul Kool Animated Website</h3>
+              <p class="project-desc">
+                Created a visually rich, premium animated showcase website for Amul Kool beverages. Features high-fidelity scroll animations, vibrant responsive layouts, glassmorphism overlays, and interactive product highlights.
+              </p>
+              
+              <div class="tech-tags">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Vite</span>
+                <span class="tech-tag">GSAP / ScrollTrigger</span>
+              </div>
+              
+              <div class="project-actions">
+                <a href="https://amul-kool-one.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary"><i class="fa-solid fa-square-arrow-up-right"></i> Live Demo</a>
+                <a href="https://github.com/Ashutosh7643" target="_blank" rel="noopener noreferrer" class="btn btn-secondary"><i class="fa-brands fa-github"></i> Repository</a>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Get in Touch</h2>
+        
+        <div class="contact-grid">
+          
+          <!-- Information Panel -->
+          <div class="contact-info-column reveal-left">
+            <div class="contact-header">
+              <h3>Let's Connect</h3>
+              <p>I am always open to discussing new opportunities, collaboration on open-source projects, or sharing insights about algorithms and systems. Feel free to reach out!</p>
+            </div>
+            
+            <div class="contact-cards">
+              <!-- Email Card -->
+              <div class="glass-panel contact-card">
+                <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="contact-card-content">
+                  <h4>Email Me</h4>
+                  <p><a href="mailto:ashutoshkumarkoath2005@gmail.com">ashutoshkumarkoath2005@gmail.com</a></p>
+                </div>
+              </div>
+              
+              <!-- Phone Card -->
+              <div class="glass-panel contact-card">
+                <div class="contact-card-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="contact-card-content">
+                  <h4>Call Me</h4>
+                  <p><a href="tel:+917643996877">7643996877</a></p>
+                </div>
+              </div>
+              
+              <!-- Location Card -->
+              <div class="glass-panel contact-card">
+                <div class="contact-card-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="contact-card-content">
+                  <h4>Location</h4>
+                  <p>Dehradun, Uttarakhand, India</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Social Link List -->
+            <div class="social-links">
+              <a href="https://github.com/Ashutosh7643" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Ashutosh's GitHub Profile">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/ashutosh-kumar-7b515b325" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Ashutosh's LinkedIn Profile">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://leetcode.com/u/ashutosh_764399/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Ashutosh's LeetCode Profile">
+                <i class="fa-solid fa-code"></i>
+              </a>
+            </div>
+          </div>
+          
+          <!-- Contact Form Panel -->
+          <div class="glass-panel contact-form-panel reveal-right">
+            <form id="contact-form" novalidate>
+              <div class="form-group">
+                <input type="text" id="form-name" class="form-input" placeholder=" " required>
+                <label for="form-name" class="form-label">Full Name</label>
+              </div>
+              
+              <div class="form-group">
+                <input type="email" id="form-email" class="form-input" placeholder=" " required>
+                <label for="form-email" class="form-label">Email Address</label>
+              </div>
+              
+              <div class="form-group">
+                <input type="text" id="form-subject" class="form-input" placeholder=" " required>
+                <label for="form-subject" class="form-label">Subject</label>
+              </div>
+              
+              <div class="form-group">
+                <textarea id="form-message" class="form-input" placeholder=" " required></textarea>
+                <label for="form-message" class="form-label">Your Message</label>
+              </div>
+              
+              <button type="submit" class="btn btn-primary" style="width: 100%; border-radius: 8px;">
+                <i class="fa-solid fa-paper-plane"></i> Send Message
+              </button>
+              
+              <div id="form-feedback" class="form-status" aria-live="polite"></div>
+            </form>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-logo">
+          <a href="#hero">Ashutosh<span>Kumar</span></a>
+        </div>
+        
+        <div class="footer-links">
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#education">Education</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+        </div>
+        
+        <div class="footer-socials">
+          <a href="https://github.com/Ashutosh7643" target="_blank" rel="noopener noreferrer" style="color: var(--text-secondary); font-size: 1.25rem;"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/ashutosh-kumar-7b515b325" target="_blank" rel="noopener noreferrer" style="color: var(--text-secondary); font-size: 1.25rem;"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://leetcode.com/u/ashutosh_764399/" target="_blank" rel="noopener noreferrer" style="color: var(--text-secondary); font-size: 1.25rem;"><i class="fa-solid fa-code"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Ashutosh Kumar. All rights reserved.</p>
+        <p style="margin-top: 5px;">Built with passion <i class="fa-solid fa-heart footer-heart"></i> by Ashutosh Kumar</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- EmailJS SDK -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+     (function(){
+        emailjs.init("V6TkmweFwYKCUtsV2");
+     })();
+  </script>
+
+  <!-- Script File -->
+  <script src="script.js"></script>
+</body>
+</html>
