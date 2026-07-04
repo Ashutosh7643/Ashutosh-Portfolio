@@ -24,9 +24,10 @@ document.addEventListener('DOMContentLoaded', () => {
   }, 2500);
 
   // ==========================================================================
-  // 2. SCROLL & STICKY NAVIGATION HEADER
+  // 2. SCROLL, STICKY NAVIGATION HEADER & PROGRESS BAR
   // ==========================================================================
   const header = document.getElementById('header');
+  const scrollProgressBar = document.getElementById('scroll-progress-bar');
   const scrollThreshold = 50;
 
   window.addEventListener('scroll', () => {
@@ -34,6 +35,14 @@ document.addEventListener('DOMContentLoaded', () => {
       header.classList.add('scrolled');
     } else {
       header.classList.remove('scrolled');
+    }
+
+    // Update scroll progress bar
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+    if (scrollProgressBar) {
+      scrollProgressBar.style.width = scrolled + '%';
     }
   });
 
@@ -166,7 +175,7 @@ document.addEventListener('DOMContentLoaded', () => {
         this.size = Math.random() * 2 + 1;
         this.speedX = (Math.random() - 0.5) * 0.6;
         this.speedY = (Math.random() - 0.5) * 0.6;
-        this.color = 'rgba(88, 166, 255, 0.4)';
+        this.color = 'rgba(168, 85, 247, 0.4)'; // Vibrant Purple Particle
       }
 
       update() {
@@ -217,7 +226,7 @@ document.addEventListener('DOMContentLoaded', () => {
           if (distance < connectionDistance) {
             // Line opacity based on proximity
             const opacity = (1 - (distance / connectionDistance)) * 0.15;
-            ctx.strokeStyle = `rgba(0, 212, 255, ${opacity})`;
+            ctx.strokeStyle = `rgba(99, 102, 241, ${opacity})`; // Electric Indigo Lines
             ctx.lineWidth = 1;
             ctx.beginPath();
             ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
@@ -233,7 +242,7 @@ document.addEventListener('DOMContentLoaded', () => {
           const distance = Math.hypot(dx, dy);
           if (distance < mouse.radius) {
             const opacity = (1 - (distance / mouse.radius)) * 0.25;
-            ctx.strokeStyle = `rgba(88, 166, 255, ${opacity})`;
+            ctx.strokeStyle = `rgba(236, 72, 153, ${opacity})`; // Rose Pink Mouse connections
             ctx.lineWidth = 1.2;
             ctx.beginPath();
             ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
@@ -488,4 +497,18 @@ document.addEventListener('DOMContentLoaded', () => {
       alert('Simulating Resume Download: A resume PDF would download here. Please use the contact details below to request a detailed copy!');
     });
   }
+
+  // ==========================================================================
+  // 11. GLASS PANEL HOVER SPOTLIGHT GLOW EFFECT
+  // ==========================================================================
+  const glassPanels = document.querySelectorAll('.glass-panel');
+  glassPanels.forEach(panel => {
+    panel.addEventListener('mousemove', (e) => {
+      const rect = panel.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      panel.style.setProperty('--mouse-x', `${x}px`);
+      panel.style.setProperty('--mouse-y', `${y}px`);
+    });
+  });
 });
