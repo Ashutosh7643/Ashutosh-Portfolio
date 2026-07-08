@@ -6,6 +6,24 @@ A premium, highly interactive, and responsive developer portfolio website design
 
 ---
 
+## 📷 Screenshots
+
+Here are some visual highlights of the portfolio:
+
+| Hero / Home | About Me |
+| :---: | :---: |
+| ![Hero Section](assets/screenshots/hero.png) | ![About Me Section](assets/screenshots/about.png) |
+
+| Skills | Projects Showcase |
+| :---: | :---: |
+| ![Skills Section](assets/screenshots/skills.png) | ![Projects Showcase](assets/screenshots/projects.png) |
+
+| Contact Form |
+| :---: |
+| ![Contact Section](assets/screenshots/contact.png) |
+
+---
+
 ## 🎨 Visual Design & User Experience
 
 - **Interactive Canvas Particle System:** The hero section features a custom, high-performance HTML5 canvas particle system that responds to page scrolling.
@@ -30,11 +48,18 @@ A premium, highly interactive, and responsive developer portfolio website design
 
 ```bash
 Portfolio/
-├── assets/                    # Image assets (mockups, profile picture)
+├── assets/                    # Image assets (mockups, profile picture, screenshots)
 │   ├── ashutosh_profile.jpg   # Main profile photograph
-│   ├── weather_dashboard.png  # Weather Dashboard screenshot
 │   ├── amul_kool_mockup.png   # Amul Kool project mockup
-│   └── gully_rasoi_mockup.png # Gully Rasoi project mockup
+│   ├── gully_rasoi_mockup.png # Gully Rasoi project mockup
+│   ├── spotify_clone_mockup.png # Spotify Clone project mockup
+│   ├── weather_dashboard_mockup.png # Weather Dashboard project mockup
+│   └── screenshots/           # UI screenshots of different sections
+│       ├── hero.png           # Hero/Home section screenshot
+│       ├── about.png          # About Me section screenshot
+│       ├── skills.png         # Skills section screenshot
+│       ├── projects.png       # Projects Showcase section screenshot
+│       └── contact.png        # Contact Form section screenshot
 ├── index.html                 # Main structure and content markup
 ├── style.css                  # Custom styling (CSS variables, layouts, animations)
 ├── script.js                  # Frontend functionality and interactive logic
