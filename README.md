@@ -2,7 +2,7 @@
 
 A premium, highly interactive, and responsive developer portfolio website designed with glassmorphic aesthetics, fluid micro-animations, and dynamic canvas particle systems. Built from scratch using modern web standards: **semantic HTML5**, **vanilla CSS3**, and **ES6+ JavaScript**.
 
-🔗 **Live Demo:** [Ashutosh Kumar Portfolio](https://github.com/Ashutosh7643) *(or custom deployment link)*
+🔗 **Live Demo:** [Ashutosh Kumar Portfolio](https://ashutosh-portfolio80.netlify.app/)
 
 ---
 
