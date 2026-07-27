@@ -81,7 +81,7 @@ A summary of academic focus, problem-solving passion, and interactive statistic 
 Documents educational milestones (B.Tech at Devbhoomi Uttarakhand University, Senior Secondary & Secondary education).
 
 ### 4. Professional Experience
-Highlights roles such as **Web Development Intern at Pinnacle Lab**, emphasizing skills gained in frontend design and development workflows.
+Highlights roles such as **Frontend Developer Intern at Alfido Tech**, emphasizing skills gained in frontend design, interactive features, and development workflows.
 
 ### 5. Technical Skills
 Categorized, animated progress bars detailing competence in:
